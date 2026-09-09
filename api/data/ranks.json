@@ -1,0 +1,8 @@
+[
+    {"id": 0, "name_en": "Novice", "name_de": "Novize", "min_score": 0, "max_score" : 99},
+    {"id": 1, "name_en": "Learner", "name_de": "Lehrling", "min_score": 100, "max_score" : 299},
+    {"id": 2, "name_en": "Scholar", "name_de": "Gelehrt", "min_score": 300, "max_score" : 599},
+    {"id": 3, "name_en": "Talent", "name_de": "Talent", "min_score": 600, "max_score" : 1799},
+    {"id": 4, "name_en": "Ace", "name_de": "Ass", "min_score": 1800, "max_score" : 2999},
+    {"id": 5, "name_en": "All-Knowing", "name_de": "Allwissend", "min_score": 3000, "max_score" : 99999}
+]

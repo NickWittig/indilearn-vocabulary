@@ -1,0 +1,37 @@
+services:
+  web:
+    image: ${API_IMAGE:-indilearn-api:latest}
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    restart: always
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - .htpasswd:/mnt/.htpasswd
+      - .env:/mnt/.env
+      - ./data/:/mnt/data/
+    networks:
+      indilearn_api_network:
+    
+  db:
+    image: ${DB_IMAGE:-indilearn-db:latest}
+    environment:
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_DB=${PG_NAME}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db_backups/:/mnt/db_backups/
+      - .env_db:/mnt/.env
+    restart: always
+    networks:
+      indilearn_api_network:
+
+volumes:
+  postgres_data:
+
+networks:
+  indilearn_api_network:
+    driver: bridge

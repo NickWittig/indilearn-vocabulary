@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name_de": "Omniszient",
+        "name_en": "Omniscient",
+        "description_de": "Jede Vokabel wurde mindestens einmal richtig beantwortet.",
+        "description_en": "Every vocabulary word in the system has been answered correctly at least once",
+        "color": "gold",
+        "icon_url": "/path/to/icon1",
+        "class_name": "AchievementOmniscient"
+    },
+    {
+        "id": 2,
+        "name_de": "Unbeirrbar",
+        "name_en": "Unshakable",
+        "description_de": "14 Tage in Folge jeweils mindestens 15 Vokabeln richtig beantwortet",
+        "description_en": "Answer at least 15 vocabulary words correctly for 14 consecutive days",
+        "color": "green",
+        "icon_url": "/path/to/icon2",
+        "class_name": "AchievementUnshakable"
+    },
+    {
+        "id": 3,
+        "name_de": "Durchmarsch",
+        "name_en": "Marching Through",
+        "description_de": "100 Vokabeln an einem Tag richtig gelöst",
+        "description_en": "Correctly solved 100 vocabulary words in one day",
+        "color": "blue",
+        "icon_url": "/path/to/icon3",
+        "class_name": "AchievementMarchingThrough"
+    },
+    {
+        "id": 4,
+        "name_de": "Höhenflug",
+        "name_en": "Soaring",
+        "description_de": "Sei mindestens einmal in den Top 3 im Leaderboard",
+        "description_en": "Be in the top 3 on the leaderboard at least once",
+        "color": "purple",
+        "icon_url": "/path/to/icon4",
+        "class_name": "AchievementSoaring"
+    },
+    {
+        "id": 5,
+        "name_de": "Schleiereule",
+        "name_en": "Night Owl",
+        "description_de": "Löse 300-mal eine Vokabel richtig nach 19:30 (vor 6Uhr Morgens)",
+        "description_en": "Solve a vocabulary word correctly 300 times after 7:30 PM (before 6 AM)",
+        "color": "black",
+        "icon_url": "/path/to/icon5",
+        "class_name": "AchievementNightOwl"
+    },
+    {
+        "id": 6,
+        "name_de": "Sprint",
+        "name_en": "Sprint",
+        "description_de": "Beantworte 25 Vokabeln richtig in 10 Minuten",
+        "description_en": "Answer 25 vocabulary words correctly in 10 minutes",
+        "color": "red",
+        "icon_url": "/path/to/icon6",
+        "class_name": "AchievementSprint"
+    },
+    {
+        "id": 7,
+        "name_de": "Über dem Horizont",
+        "name_en": "Beyond the Horizon",
+        "description_de": "Beantworte 100 Vokabeln aus der Klasse 6 richtig.",
+        "description_en": "Answer 100 vocabulary words from class 6 correctly",
+        "color": "orange",
+        "icon_url": "/path/to/icon7",
+        "class_name": "AchievementBeyondTheHorizon"
+    }
+]

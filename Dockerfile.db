@@ -1,0 +1,20 @@
+# Dockerfile
+FROM postgres:13
+
+# Install cron
+RUN apt-get update && apt-get install -y cron
+
+# Set the working directory
+WORKDIR /db
+
+# Copy backup script into the container
+COPY backup.sh /usr/local/bin/backup.sh
+
+# Give execution rights to the script
+RUN chmod +x /usr/local/bin/backup.sh
+
+# Add cron job
+RUN echo "0 */12 * * * root /usr/local/bin/backup.sh" >> /etc/crontab
+
+# Ensure cron is started as well as postgres
+CMD ["sh", "-c", "service cron start && exec docker-entrypoint.sh postgres"]
